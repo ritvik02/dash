@@ -55,7 +55,7 @@ fig_inquiries_over_time = create_line_chart(df)
 
 # Initialize the Dash app
 app = dash.Dash(__name__)
-
+server = app.server
 app.layout = html.Div([
     # Display total inquiries
     html.Div([
